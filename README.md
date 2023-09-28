@@ -1,5 +1,19 @@
 # REST API Приложение
+Развертывание приложения:
+```
+git clone https://github.com/Yauheni-Panov/systemeoi_test.git
 
+docker-compose up --build -d
+
+docker exec -it web bash
+
+composer install
+
+bin/console doctrine:database:create
+
+bin/console doctrine:migrations:migrate
+
+```
 Апи эндпоинты:
 
 1) Рассчет стоимости товара. 
